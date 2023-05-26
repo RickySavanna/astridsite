@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Astrid Genesis LLC</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://css.gg/app.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">Astrid Genesis LLC</div>
+            <ul>
+                <li><a href="index.html"></i>Home</a></li>
+                <li><a href="services.html"><i class="gg-tools nav-icon"></i>Services</a></li>
+                <li><a href="projects.html"><i class="gg-file nav-icon"></i>Projects</a></li>
+                <li><a href="about.html"><i class="gg-info nav-icon"></i>About</a></li>
+                <li><a href="contact.html"><i class="gg-mail nav-icon"></i>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero-section fadeIn">
+        <div class="hero-content">
+            <h2>Our Projects</h2>
+            <p>Discover our innovative solutions in the realm of software and AI.</p>
+        </div>
+    </div>
+
+    <div class="container my-8">
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card slideUp">
+                    <img src="/images/5162744.jpg" alt="Astrid AI" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Astrid FinBot</h5>
+                        <p class="card-text">Our finance chatbot designed to assist traders in analyzing live data, tracking trades, and providing psychological support.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4"> 
+                <div class="card slideUp">
+                    <img src="/images/screen.png" alt="TaskNova" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">TaskNova</h5>
+                        <p class="card-text">TaskNova is our productivity app that helps programmers manage their work more effectively with a unique terminal interface.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card slideUp">
+                    <img src="/images/Wavy_Tech-24_Single-05.jpg" alt="Cyber Security AI" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Cyber Security AI</h5>
+                        <p class="card-text">Our Cyber Security AI actively identifies potential threats, ensuring enhanced security and peace of mind for our clients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Astrid Genesis LLC. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Animation for cards
+        const cards = document.querySelectorAll('.card');
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('slideUp');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        cards.forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Astrid Genesis LLC</title>
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://css.gg/app.css" rel="stylesheet">
-        <link href="styles.css" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Astrid Genesis LLC</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://css.gg/app.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
 
 <body>
-    <header>
-        <h1>Our Services</h1>
-    </header>
-
     <nav>
         <div class="nav-content">
             <div class="logo">Astrid Genesis LLC</div>
@@ -28,39 +24,75 @@
         </div>
     </nav>
 
-    <div class="container my-8">
-        <div class="section">
-            <h2 class="section-title">Our Services</h2>
-            
-            <div class="section-content slideUp">
-                <h3>Software Development</h3>
-                <p>We offer custom software development services to cater to your business needs. From ideation to deployment, we take care of everything.</p>
-            </div>
-            
-            <div class="section-content slideUp">
-                <h3>AI Implementation</h3>
-                <p>Our team specializes in AI integration to help your business leverage the power of artificial intelligence for better decision making and improved customer experiences.</p>
-            </div>
+    <div class="hero-section fadeIn">
+        <div class="hero-content">
+            <h2>Our Services</h2>
+            <p>Explore our range of cutting-edge tech solutions tailored to meet your specific requirements.</p>
+        </div>
+    </div>
 
-            <div class="section-content slideUp">
-                <h3>Cyber Security Services</h3>
-                <p>Our Cybersecurity services include but are not limited to:</p>
-                <ul>
-                    <li>Network Security Auditing</li>
-                    <li>Intrusion Detection/Prevention</li>
-                    <li>Cybersecurity Awareness Training</li>
-                    <li>Penetration Testing</li>
-                    <li>Vulnerability Scanning</li>
-                    <li>Data Encryption</li>
-                </ul>
+    <div class="container my-8">
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card slideUp">
+                    <img src="/images/DALL·E 2023-05-26 02.14.48 -  _Find a captivating image for our website that represents software development. It should convey coding, problem-solving, and creativity, showcasing .png" alt="Software Development" class="card-img-top"> <!-- add this line -->
+                    <div class="card-body">
+                        <h5 class="card-title">Software Development</h5>
+                        <p class="card-text">We offer custom software development services to cater to your business needs. From ideation to deployment, we take care of everything.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card slideUp">
+                    <img src="/images/DALL·E 2023-05-26 02.08.59 - _Find a captivating image representing AI implementation. It should capture the essence of AI technology, appeal to visitors, and showcase our experti.png" alt="AI Implementation" class="card-img-top"> <!-- add this line -->
+                    <div class="card-body">
+                        <h5 class="card-title">AI Implementation</h5>
+                        <p class="card-text">Our team specializes in AI integration to help your business leverage the power of artificial intelligence for better decision making and improved customer experiences.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card slideUp">
+                    <img src="/images/DALL·E 2023-05-26 02.06.45 - _Find a captivating cybersecurity image for our website that conveys security, technology, and innovation. Choose an image that reflects our commitmen.png" alt="Cyber Security Services" class="card-img-top"> <!-- add this line -->
+                    <div class="card-body">
+                        <h5 class="card-title">Cyber Security Services</h5>
+                        <p class="card-text">We provide comprehensive cyber security services including Network Security Auditing, Intrusion Detection/Prevention, Cybersecurity Awareness Training, Penetration Testing, Vulnerability Scanning, and Data Encryption.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2023 Astrid Genesis LLC. All rights reserved.</p>
+        <div class="footer-content">
+            <p>&copy; 2023 Astrid Genesis LLC. All rights reserved.</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </footer>
 
+    <script>
+        // Animation for cards
+        const cards = document.querySelectorAll('.card');
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('slideUp');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        cards.forEach(card => {
+            observer.observe(card);
+        });
+    </script>
 </body>
 
 </html>
