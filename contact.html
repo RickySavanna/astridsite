@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Astrid Genesis LLC</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://css.gg/app.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us | Astrid Genesis LLC</h1>
+    </header>
+
+    <nav>
+        <div class="nav-content">
+            <div class="logo">Astrid Genesis LLC</div>
+            <ul>
+                <li><a href="#"><i class="gg-home nav-icon"></i>Home</a></li>
+                <li><a href="services.html"><i class="gg-tools nav-icon"></i>Services</a></li>
+                <li><a href="projects.html"><i class="gg-file nav-icon"></i>Projects</a></li>
+                <li><a href="about.html"><i class="gg-info nav-icon"></i>About</a></li>
+                <li><a href="contact.html"><i class="gg-mail nav-icon"></i>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-8">
+        <div class="section">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="section-content slideUp">
+                <form action="submit_form.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Astrid Genesis LLC. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
